@@ -4,7 +4,7 @@ pipeline {
         stage('pull') {
             steps {
                 echo "we are pulling from github"
-                git 'https://github.com/AnupDudhe/studentapp-ui.git'
+                git branch: '', url: 'https://github.com/pooja123-45/Jenkins.git'
             }
         }
         stage('Build') {
