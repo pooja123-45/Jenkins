@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'webserver' } 
+    agent { label 'webserver' }  // name of Label which you use via setting ssh host
     stages {
         stage('pull') {
             steps {
                 echo "we are pulling from github"
-                git branch: '', url: 'https://github.com/pooja123-45/Jenkins.git'
+                git branch: 'main', url: 'https://github.com/pooja123-45/Jenkins.git'
             }
         }
         stage('Build') {
