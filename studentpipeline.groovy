@@ -19,6 +19,7 @@ pipeline {
             steps {
                 //
                 echo "we are testing in this stage from sonarqube server"
+                //putcmd ehich you get from sonarqube
             }
         }
         stage('Deploy') {
